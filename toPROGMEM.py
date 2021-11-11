@@ -7,7 +7,7 @@ files = os.listdir()
 for file in files:
     if os.path.isfile(file):
         if file.endswith(".htm") or file.endswith(".html") or file.endswith(".css") or file.endswith(".js"):
-            temp[file[ : file.rindex(".")]] = open(file, 'r').read()
+            temp[file[ : file.rindex(".")]] = ""
             
 while(1):
     sleep(1)
